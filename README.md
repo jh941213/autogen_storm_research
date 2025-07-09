@@ -2,9 +2,11 @@
 
 AutoGen 기반의 병렬 처리 STORM(Synthesis of Topic Outline through Retrieval and Multi-perspective question asking) 연구 시스템입니다. 다중 관점에서 전문가 인터뷰를 병렬로 수행하여 고품질의 위키피디아 스타일 아티클을 자동 생성합니다.
 
-[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)
+[![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)](https://python.org)
 [![AutoGen](https://img.shields.io/badge/AutoGen-Latest-green.svg)](https://github.com/microsoft/autogen)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+https://jxnl.co/writing/2024/06/05/predictions-for-the-future-of-rag/#reports-over-rag
 
 ## ✨ 주요 특징
 
