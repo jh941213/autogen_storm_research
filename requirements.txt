@@ -1,0 +1,22 @@
+# 필수 패키지
+autogen-agentchat>=0.2.0
+autogen-ext[openai]>=0.2.0
+pydantic>=2.0.0
+python-dotenv>=1.0.0
+
+# 검색 엔진
+tavily-python>=0.3.0
+duckduckgo-search>=3.9.0
+
+# UI 향상
+rich>=13.0.0
+
+# 유틸리티
+psutil>=5.9.0
+asyncio-throttle>=1.0.0
+
+# 개발용 (선택사항)
+pytest>=7.0.0
+black>=23.0.0
+flake8>=6.0.0
+mypy>=1.0.0
