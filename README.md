@@ -1,4 +1,4 @@
-# KTDS DeepResearch
+# AutoGen DeepResearch
 
 AI 전문가들이 협력하여 어떤 주제든 깊이 있게 연구하는 차세대 연구 플랫폼
 
@@ -20,7 +20,7 @@ AI 전문가들이 협력하여 어떤 주제든 깊이 있게 연구하는 차�
 - **실시간 통신**: WebSocket 기반 양방향 통신
 
 ### 프론트엔드 (Next.js)
-- **포트**: 3000
+- **포트**: 3001
 - **기술**: Next.js 15, TypeScript, Tailwind CSS
 - **UI 라이브러리**: shadcn/ui
 - **상태 관리**: Zustand
@@ -52,7 +52,7 @@ cd frontend && ./start.sh
 
 ## 🌐 접속 URL
 
-- **메인 애플리케이션**: http://localhost:3000
+- **메인 애플리케이션**: http://localhost:3001
 - **백엔드 API**: http://localhost:8002
 - **API 문서**: http://localhost:8002/docs
 
@@ -106,7 +106,7 @@ LANGFUSE_HOST=your_langfuse_host
 NEXT_PUBLIC_API_URL=http://localhost:8002
 
 # 앱 정보
-NEXT_PUBLIC_APP_NAME=KTDS DeepResearch
+NEXT_PUBLIC_APP_NAME=AutoGen DeepResearch
 NEXT_PUBLIC_APP_VERSION=1.0.0
 ```
 
@@ -138,7 +138,7 @@ tail -f server.log frontend/frontend.log
 ### 포트 충돌
 ```bash
 # 사용 중인 포트 확인
-lsof -i :8002 -i :3000
+lsof -i :8002 -i :3001
 
 # 프로세스 종료
 kill -9 <PID>
@@ -150,7 +150,7 @@ kill -9 <PID>
 curl http://localhost:8002/health
 
 # 프론트엔드 상태
-curl http://localhost:3000
+curl http://localhost:3001
 ```
 
 ### 환경 변수 확인
@@ -217,4 +217,4 @@ storm-research/
 
 ---
 
-**KTDS DeepResearch** - AI 전문가들이 협력하는 차세대 연구 플랫폼 🚀
+**AutoGen DeepResearch** - AI 전문가들이 협력하는 차세대 연구 플랫폼 🚀
