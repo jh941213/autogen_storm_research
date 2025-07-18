@@ -1,4 +1,5 @@
 {
+  "name": "autogen-research",
   "builds": [
     {
       "src": "package.json",
@@ -6,6 +7,6 @@
     }
   ],
   "env": {
-    "NEXT_PUBLIC_API_URL": "https://autogen-deepresearch-296922371397.asia-northeast3.run.app"
+    "NEXT_PUBLIC_API_URL": "https://web-production-25dc.up.railway.app"
   }
 }
