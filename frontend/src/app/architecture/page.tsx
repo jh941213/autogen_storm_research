@@ -268,7 +268,7 @@ export default function ArchitecturePage() {
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                         <div className="bg-yellow-50 p-3 rounded">
                           <div className="text-xs font-medium text-yellow-700">TextMentionTermination</div>
-                          <div className="text-xs text-yellow-600 mt-1">"감사합니다!" 키워드로 자연스러운 종료</div>
+                          <div className="text-xs text-yellow-600 mt-1">&quot;감사합니다!&quot; 키워드로 자연스러운 종료</div>
                         </div>
                         <div className="bg-red-50 p-3 rounded">
                           <div className="text-xs font-medium text-red-700">MaxMessageTermination</div>

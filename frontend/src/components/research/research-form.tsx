@@ -12,7 +12,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { Badge } from '@/components/ui/badge';
 import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
 import { Switch } from '@/components/ui/switch';
-import { Loader2, Search, Sparkles, Users, MessageSquare } from 'lucide-react';
+import { Loader2, Search, Sparkles, MessageSquare } from 'lucide-react';
 import { ResearchFormData } from '@/types';
 
 const formSchema = z.object({

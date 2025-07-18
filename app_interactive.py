@@ -971,10 +971,12 @@ async def shutdown_event():
     print("✅ 서버 종료 완료")
 
 if __name__ == "__main__":
+    import os
+    port = int(os.environ.get("PORT", 8002))
     uvicorn.run(
         "app_interactive:app",
         host="0.0.0.0",
-        port=8002,
-        reload=True,
+        port=port,
+        reload=False,
         log_level="info"
     )

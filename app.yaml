@@ -1,0 +1,13 @@
+runtime: python311
+
+env_variables:
+  PORT: "8080"
+
+automatic_scaling:
+  min_instances: 0
+  max_instances: 1
+  target_cpu_utilization: 0.6
+  target_throughput_utilization: 0.6
+
+# 무료 인스턴스 클래스 사용
+instance_class: F1
