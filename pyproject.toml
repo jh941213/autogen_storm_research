@@ -1,0 +1,59 @@
+[project]
+name = "storm-research"
+version = "0.1.0"
+description = "AutoGen 기반의 STORM Research Assistant - 멀티 에이전트 연구 시스템"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "autogen-agentchat>=0.4.0",
+    "autogen-core>=0.6.4",
+    "autogen-ext[openai,azure,anthropic]>=0.4.0",
+    "openai>=1.96.1",
+    "aiohttp>=3.8.0",
+    "feedparser>=6.0.0",
+    "pydantic>=2.0.0",
+    "azure-identity>=1.15.0",
+    "python-dotenv>=1.0.0",
+    "langfuse>=2.0.0",
+    "openlit>=0.1.0",
+    "fastapi>=0.116.0",
+    "uvicorn>=0.35.0",
+    "websockets>=15.0.0",
+    "python-multipart>=0.0.20",
+    "tavily-python>=0.7.0",
+    "wikipedia-api>=0.8.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.21.0",
+    "black>=23.0.0",
+    "isort>=5.12.0",
+    "mypy>=1.0.0",
+]
+
+[project.scripts]
+storm-research = "autogen_storm.main:main"
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["autogen_storm*"]
+exclude = ["autogen*"]
+
+[tool.black]
+line-length = 100
+target-version = ['py311']
+
+[tool.isort]
+profile = "black"
+line_length = 100
+
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
